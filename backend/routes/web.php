@@ -16,8 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('pages.auth.login');
-})->middleware('auth');
-
-Route::get('login', [AuthController::class, 'login'])->name('login');
-Route::get('registration', [AuthController::class, 'registation'])->name('registration');
-Route::post('post-registration', [AuthController::class, 'postRegistration'])->name('postRegistration');
+});

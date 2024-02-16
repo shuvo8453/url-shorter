@@ -337,4 +337,21 @@ const router = createRouter({
   ]
 })
 
+router.beforeEach((to, from, next) => {
+  if (to.meta.requiresAuth) {
+    const token = localStorage.getItem('token');
+    console.log(token);
+    if (token) {
+      // User is authenticated, proceed to the route
+      next();
+    } else {
+      // User is not authenticated, redirect to login
+      next('/signin');
+    }
+  } else {
+    // Non-protected route, allow access
+    next();
+  }
+});
+
 export default router

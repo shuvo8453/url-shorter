@@ -57,7 +57,7 @@
           </h3>
           <ul class="mt-3">
             <!-- Dashboard -->
-            <SidebarLinkGroup v-slot="parentLink" :activeCondition="currentRoute.fullPath === '/' || currentRoute.fullPath.includes('dashboard')">
+            <!-- <SidebarLinkGroup v-slot="parentLink" :activeCondition="currentRoute.fullPath === '/' || currentRoute.fullPath.includes('dashboard')">
               <a class="block text-slate-200 truncate transition duration-150" :class="(currentRoute.fullPath === '/' || currentRoute.fullPath.includes('dashboard')) ? 'hover:text-slate-200' : 'hover:text-white'" href="#0" @click.prevent="parentLink.handleClick(); sidebarExpanded = true">
                 <div class="flex items-center justify-between">
                   <div class="flex items-center">
@@ -68,7 +68,7 @@
                     </svg>
                     <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Dashboard</span>
                   </div>
-                  <!-- Icon -->
+
                   <div class="flex shrink-0 ml-2">
                     <svg class="w-3 h-3 shrink-0 ml-1 fill-current text-slate-400" :class="parentLink.expanded && 'rotate-180'" viewBox="0 0 12 12">
                       <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z" />
@@ -101,9 +101,9 @@
                   </router-link>                                  
                 </ul>
               </div>
-            </SidebarLinkGroup>            
+            </SidebarLinkGroup>             -->
             <!-- E-Commerce  -->
-            <SidebarLinkGroup v-slot="parentLink" :activeCondition="currentRoute.fullPath.includes('ecommerce')">
+            <!-- <SidebarLinkGroup v-slot="parentLink" :activeCondition="currentRoute.fullPath.includes('ecommerce')">
               <a class="block text-slate-200 truncate transition duration-150" :class="currentRoute.fullPath.includes('ecommerce') ? 'hover:text-slate-200' : 'hover:text-white'" href="#0" @click.prevent="parentLink.handleClick(); sidebarExpanded = true">
                 <div class="flex items-center justify-between">
                   <div class="flex items-center">
@@ -114,7 +114,7 @@
                     </svg>
                     <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">E-Commerce </span>
                   </div>
-                  <!-- Icon -->
+                  
                   <div class="flex shrink-0 ml-2">
                     <svg class="w-3 h-3 shrink-0 ml-1 fill-current text-slate-400" :class="parentLink.expanded && 'rotate-180'" viewBox="0 0 12 12">
                       <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z" />
@@ -196,9 +196,9 @@
                   </router-link>
                 </ul>
               </div>
-            </SidebarLinkGroup>
+            </SidebarLinkGroup> -->
             <!-- Community -->
-            <SidebarLinkGroup v-slot="parentLink" :activeCondition="currentRoute.fullPath.includes('community')">
+            <!-- <SidebarLinkGroup v-slot="parentLink" :activeCondition="currentRoute.fullPath.includes('community')">
               <a class="block text-slate-200 truncate transition duration-150" :class="currentRoute.fullPath.includes('community') ? 'hover:text-slate-200' : 'hover:text-white'" href="#0" @click.prevent="parentLink.handleClick(); sidebarExpanded = true">
                 <div class="flex items-center justify-between">
                   <div class="flex items-center">
@@ -208,7 +208,7 @@
                     </svg>
                     <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Community</span>
                   </div>
-                  <!-- Icon -->
+                 
                   <div class="flex shrink-0 ml-2">
                     <svg class="w-3 h-3 shrink-0 ml-1 fill-current text-slate-400" :class="parentLink.expanded && 'rotate-180'" viewBox="0 0 12 12">
                       <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z" />
@@ -276,9 +276,9 @@
                   </router-link>                  
                 </ul>
               </div>
-            </SidebarLinkGroup>
+            </SidebarLinkGroup> -->
             <!-- Finance -->
-            <SidebarLinkGroup v-slot="parentLink" :activeCondition="currentRoute.fullPath.includes('finance')">
+            <!-- <SidebarLinkGroup v-slot="parentLink" :activeCondition="currentRoute.fullPath.includes('finance')">
               <a class="block text-slate-200 truncate transition duration-150" :class="currentRoute.fullPath.includes('finance') ? 'hover:text-slate-200' : 'hover:text-white'" href="#0" @click.prevent="parentLink.handleClick(); sidebarExpanded = true">
                 <div class="flex items-center justify-between">
                   <div class="flex items-center">
@@ -289,7 +289,7 @@
                     </svg>
                     <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Finance</span>
                   </div>
-                  <!-- Icon -->
+                 
                   <div class="flex shrink-0 ml-2">
                     <svg class="w-3 h-3 shrink-0 ml-1 fill-current text-slate-400" :class="parentLink.expanded && 'rotate-180'" viewBox="0 0 12 12">
                       <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z" />
@@ -322,9 +322,9 @@
                   </router-link>                
                 </ul>
               </div>
-            </SidebarLinkGroup>    
+            </SidebarLinkGroup>     -->
             <!-- Job Board -->
-            <SidebarLinkGroup v-slot="parentLink" :activeCondition="currentRoute.fullPath.includes('job')">
+            <!-- <SidebarLinkGroup v-slot="parentLink" :activeCondition="currentRoute.fullPath.includes('job')">
               <a class="block text-slate-200 truncate transition duration-150" :class="currentRoute.fullPath.includes('job') ? 'hover:text-slate-200' : 'hover:text-white'" href="#0" @click.prevent="parentLink.handleClick(); sidebarExpanded = true">
                 <div class="flex items-center justify-between">
                   <div class="flex items-center">
@@ -335,7 +335,7 @@
                     </svg>
                     <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Job Board</span>
                   </div>
-                  <!-- Icon -->
+                 
                   <div class="flex shrink-0 ml-2">
                     <svg class="w-3 h-3 shrink-0 ml-1 fill-current text-slate-400" :class="parentLink.expanded && 'rotate-180'" viewBox="0 0 12 12">
                       <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z" />
@@ -368,9 +368,9 @@
                   </router-link>                
                 </ul>
               </div>
-            </SidebarLinkGroup>
+            </SidebarLinkGroup> -->
             <!-- Tasks -->
-            <SidebarLinkGroup v-slot="parentLink" :activeCondition="currentRoute.fullPath.includes('tasks')">
+            <!-- <SidebarLinkGroup v-slot="parentLink" :activeCondition="currentRoute.fullPath.includes('tasks')">
               <a class="block text-slate-200 truncate transition duration-150" :class="currentRoute.fullPath.includes('tasks') ? 'hover:text-slate-200' : 'hover:text-white'" href="#0" @click.prevent="parentLink.handleClick(); sidebarExpanded = true">
                 <div class="flex items-center justify-between">
                   <div class="flex items-center">
@@ -381,7 +381,6 @@
                     </svg>
                     <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Tasks</span>
                   </div>
-                  <!-- Icon -->
                   <div class="flex shrink-0 ml-2">
                     <svg class="w-3 h-3 shrink-0 ml-1 fill-current text-slate-400" :class="parentLink.expanded && 'rotate-180'" viewBox="0 0 12 12">
                       <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z" />
@@ -407,9 +406,9 @@
                   </router-link>              
                 </ul>
               </div>
-            </SidebarLinkGroup>                  
+            </SidebarLinkGroup>                   -->
             <!-- Messages -->
-            <router-link to="/messages" custom v-slot="{ href, navigate, isExactActive }">
+            <!-- <router-link to="/messages" custom v-slot="{ href, navigate, isExactActive }">
               <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0" :class="isExactActive && 'bg-slate-900'">
                 <a class="block text-slate-200 truncate transition duration-150" :class="isExactActive ? 'hover:text-slate-200' : 'hover:text-white'" :href="href" @click="navigate">
                   <div class="flex items-center justify-between">
@@ -420,14 +419,14 @@
                       </svg>
                       <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Messages</span>
                     </div>
-                    <!-- Badge -->
+                    
                     <div class="flex flex-shrink-0 ml-2">
                       <span class="inline-flex items-center justify-center h-5 text-xs font-medium text-white bg-indigo-500 px-2 rounded">4</span>
                     </div>
                   </div>
                 </a>
               </li>
-            </router-link>
+            </router-link> -->
             <!-- Inbox -->
             <router-link to="/inbox" custom v-slot="{ href, navigate, isExactActive }">
               <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0" :class="isExactActive && 'bg-slate-900'">
@@ -437,13 +436,13 @@
                       <path class="fill-current" :class="isExactActive ? 'text-indigo-500' : 'text-slate-600'" d="M16 13v4H8v-4H0l3-9h18l3 9h-8Z" />
                       <path class="fill-current" :class="isExactActive ? 'text-indigo-300' : 'text-slate-400'" d="m23.72 12 .229.686A.984.984 0 0 1 24 13v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-8c0-.107.017-.213.051-.314L.28 12H8v4h8v-4H23.72ZM13 0v7h3l-4 5-4-5h3V0h2Z" />
                     </svg>
-                    <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Inbox</span>
+                    <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">url short form</span>
                   </div>
                 </a>
               </li>
             </router-link>
             <!-- Calendar -->
-            <router-link to="/calendar" custom v-slot="{ href, navigate, isExactActive }">
+            <!-- <router-link to="/calendar" custom v-slot="{ href, navigate, isExactActive }">
               <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0" :class="isExactActive && 'bg-slate-900'">
                 <a class="block text-slate-200 truncate transition duration-150" :class="isExactActive ? 'hover:text-slate-200' : 'hover:text-white'" :href="href" @click="navigate">
                   <div class="flex items-center">
@@ -455,9 +454,9 @@
                   </div>
                 </a>
               </li>
-            </router-link>
+            </router-link> -->
             <!-- Campaigns -->
-            <router-link to="/campaigns" custom v-slot="{ href, navigate, isExactActive }">
+            <!-- <router-link to="/campaigns" custom v-slot="{ href, navigate, isExactActive }">
               <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0" :class="isExactActive && 'bg-slate-900'">
                 <a class="block text-slate-200 truncate transition duration-150" :class="isExactActive ? 'hover:text-slate-200' : 'hover:text-white'" :href="href" @click="navigate">
                   <div class="flex items-center">
@@ -469,9 +468,9 @@
                   </div>
                 </a>
               </li>
-            </router-link>            
+            </router-link>             -->
             <!-- Settings -->
-            <SidebarLinkGroup v-slot="parentLink" :activeCondition="currentRoute.fullPath.includes('settings')">
+            <!-- <SidebarLinkGroup v-slot="parentLink" :activeCondition="currentRoute.fullPath.includes('settings')">
               <a class="block text-slate-200 truncate transition duration-150" :class="currentRoute.fullPath.includes('settings') ? 'hover:text-slate-200' : 'hover:text-white'" href="#0" @click.prevent="parentLink.handleClick(); sidebarExpanded = true">            
                 <div class="flex items-center justify-between">
                   <div class="flex items-center">
@@ -483,7 +482,7 @@
                     </svg>
                     <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Settings</span>
                   </div>
-                  <!-- Icon -->
+                  
                   <div class="flex shrink-0 ml-2">
                     <svg class="w-3 h-3 shrink-0 ml-1 fill-current text-slate-400" :class="parentLink.expanded && 'rotate-180'" viewBox="0 0 12 12">
                       <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z" />
@@ -537,9 +536,9 @@
                   </router-link>                                                                    
                 </ul>
               </div>
-            </SidebarLinkGroup>
+            </SidebarLinkGroup> -->
             <!-- Utility -->
-            <SidebarLinkGroup v-slot="parentLink" :activeCondition="currentRoute.fullPath.includes('utility')">
+            <!-- <SidebarLinkGroup v-slot="parentLink" :activeCondition="currentRoute.fullPath.includes('utility')">
               <a class="block text-slate-200 truncate transition duration-150" :class="currentRoute.fullPath.includes('utility') ? 'hover:text-slate-200' : 'hover:text-white'" href="#0" @click.prevent="parentLink.handleClick(); sidebarExpanded = true">
                 <div class="flex items-center justify-between">
                   <div class="flex items-center">
@@ -551,7 +550,7 @@
                     </svg>
                     <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Utility</span>
                   </div>
-                  <!-- Icon -->
+                  
                   <div class="flex shrink-0 ml-2">
                     <svg class="w-3 h-3 shrink-0 ml-1 fill-current text-slate-400" :class="parentLink.expanded && 'rotate-180'" viewBox="0 0 12 12">
                       <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z" />
@@ -605,11 +604,11 @@
                   </router-link>                  
                 </ul>
               </div>
-            </SidebarLinkGroup>          
+            </SidebarLinkGroup>           -->
           </ul>
         </div>
         <!-- More group -->
-        <div>
+        <div class="hidden">
           <h3 class="text-xs uppercase text-slate-500 font-semibold pl-3">
             <span class="hidden lg:block lg:sidebar-expanded:hidden 2xl:hidden text-center w-6" aria-hidden="true">•••</span>
             <span class="lg:hidden lg:sidebar-expanded:block 2xl:block">More</span>
