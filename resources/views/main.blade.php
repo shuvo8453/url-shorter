@@ -5,16 +5,20 @@
 </head>
 <body>
     <div class="container">
-        <header class="row">
-            @include('layouts.header')
-        </header>
+        @auth
+            <header class="row">
+                @include('layouts.header')
+            </header>
+        @endauth
 
         <div id="main" class="row">
                 @yield('content')
         </div>
 
         <footer class="row">
-            @include('layouts.footer')
+            @auth
+                @include('layouts.footer')
+            @endauth
         </footer>
     </div>
 </body>
