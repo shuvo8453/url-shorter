@@ -52,4 +52,15 @@ class AuthController extends Controller
             Log::debug($e->getMessage());
         }
     }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+
+        return redirect('/login');
+    }
 }
