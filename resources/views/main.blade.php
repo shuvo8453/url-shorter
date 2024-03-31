@@ -15,11 +15,11 @@
                 @yield('content')
         </div>
 
-        <footer class="row">
+        {{-- <footer class="row">
             @if(auth()->user())
                 @include('layouts.footer')
             @endif
-        </footer>
+        </footer> --}}
     </div>
 </body>
 </html>
