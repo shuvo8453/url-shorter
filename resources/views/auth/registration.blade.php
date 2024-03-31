@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="mt-5 container w-50 ">
-    <form name="" id="" method="POST" action="{{ route('post_registration') }}">
+    <form method="POST" action="{{ route('post_registration') }}">
         @csrf
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>

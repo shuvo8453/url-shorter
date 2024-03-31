@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\AuthRequest;
-use App\Http\Requests\RegistrationRequest;
 use App\Models\User;
 use Exception;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 
 class AuthController extends Controller
@@ -21,13 +21,30 @@ class AuthController extends Controller
         return view('auth.registration');
     }
 
+    public function postLogin(Request $request)
+    {
+        // $credentials = $request->except('name', 'confirm_password');
+        // $request->validate([
+        //     'email' => 'required',
+        //     'password' => 'password'
+        // ]);
+        $credentials = $request->only('email', 'password');
+        if(Auth::attempt($credentials)) {
+            return view('pages.dashboard');
+        }
+
+        return redirect('/login');
+    }
+
     public function postRegistration(AuthRequest $request)
     {
         try{
 
             $data = $request->validated();
 
-            User::create($data);
+            $user = User::create($data);
+
+            Auth::login($user);
 
             return view('pages.dashboard');
 
