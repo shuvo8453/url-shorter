@@ -29,6 +29,7 @@
         </ul>
         @if (auth()->check())
             <form class="d-flex" method="POST" action="{{ route('logout') }}">
+                @csrf
                 <button class="btn btn-outline-success" type="submit">Logout</button>
             </form>
         @endif

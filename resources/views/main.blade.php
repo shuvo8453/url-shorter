@@ -5,20 +5,20 @@
 </head>
 <body>
     <div class="container">
-        @auth
+        @if(auth()->user())
             <header class="row">
                 @include('layouts.header')
             </header>
-        @endauth
+        @endif
 
         <div id="main" class="row">
                 @yield('content')
         </div>
 
         <footer class="row">
-            @auth
+            @if(auth()->user())
                 @include('layouts.footer')
-            @endauth
+            @endif
         </footer>
     </div>
 </body>

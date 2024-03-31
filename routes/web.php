@@ -19,6 +19,11 @@ Route::get('/', function () {
     return view('main');
 })->middleware(Authenticate::class);
 
+Route::group(['middleware' => ['auth']], function() {
+    Route::get('dashboard',[AuthController::class, 'index'])->name('dashboard');
+});
+
+
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::get('/registration', [AuthController::class, 'registation'])->name('registation');
 Route::post('/post_login', [AuthController::class, 'postLogin'])->name('post_login');

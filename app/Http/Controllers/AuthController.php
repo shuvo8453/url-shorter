@@ -11,6 +11,11 @@ use Illuminate\Support\Facades\Log;
 
 class AuthController extends Controller
 {
+    public function index()
+    {
+        return view('pages.dashboard');
+    }
+
     public function login()
     {
         return view('auth.login');
@@ -30,7 +35,7 @@ class AuthController extends Controller
         // ]);
         $credentials = $request->only('email', 'password');
         if(Auth::attempt($credentials)) {
-            return view('pages.dashboard');
+            return redirect('dashboard');
         }
 
         return redirect('/login');
@@ -46,7 +51,7 @@ class AuthController extends Controller
 
             Auth::login($user);
 
-            return view('pages.dashboard');
+            return redirect('dashboard');
 
         } catch(Exception $e) {
             Log::debug($e->getMessage());
